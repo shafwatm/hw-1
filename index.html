@@ -314,11 +314,11 @@ Tip
 <div class="cell">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">generate_matrix</span>(<span class="dv">4</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>            [,1]       [,2]      [,3]       [,4]
-[1,]  0.62142231 -0.2898564 1.6668000 -1.2060228
-[2,]  0.04477555 -0.3207176 0.3882152  0.6300206
-[3,] -1.97263120  0.5281439 1.1933117 -0.5395644
-[4,] -0.92433004  1.2885123 0.2108641  0.8178336</code></pre>
+<pre><code>           [,1]       [,2]         [,3]       [,4]
+[1,]  0.4328171 -1.0922418 -0.258124740 -0.5066043
+[2,]  0.8908437 -0.4698534 -1.629213191  0.5970644
+[3,]  0.1757243  1.6977690  1.117101403 -0.7093857
+[4,] -1.2126535  0.3670770  0.001403864  0.5037267</code></pre>
 </div>
 </div>
 <p>Let <code>M</code> be a fixed <span class="math inline">\(50 \times 50\)</span> matrix</p>
@@ -326,7 +326,7 @@ Tip
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>M <span class="ot">&lt;-</span> <span class="fu">generate_matrix</span>(<span class="dv">50</span>)</span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(M)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] -0.01509947</code></pre>
+<pre><code>[1] -0.001127504</code></pre>
 </div>
 </div>
 <ol start="2" type="1">
@@ -358,7 +358,7 @@ Tip
 <span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a>    <span class="fu">return</span>(count)</span>
 <span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>You can check if your code using the function here<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
+<p>You can check if your code is doing what it’s supposed to using the function here<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
 <ol start="4" type="1">
 <li><p>Between <code>col_wise_scan</code> and <code>row_wise_scan</code>, which function do you expect to take shorter to run? Why?</p></li>
 <li><p>Write a function <code>time_scan</code> which takes in a method <code>f</code> and a matrix <code>M</code> and outputs the amount of time taken to run <code>f(M)</code></p></li>

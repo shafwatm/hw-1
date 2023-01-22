@@ -206,7 +206,7 @@ col_wise_scan <- function(x){
     return(count)
 }
 ```
-You can check if your code using the function here[^footnote]
+You can check if your code is doing what it's supposed to using the function here[^footnote]
 
 4. Between `col_wise_scan` and `row_wise_scan`, which function do you expect to take shorter to run? Why?
 
