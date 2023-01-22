@@ -1,6 +1,6 @@
 ---
-title: "Template Quarto Document"
-author: "Author Name"
+title: "Homework 1"
+author: "[Insert your name here]{style='background-color: yellow;'}"
 title-block-banner: true
 title-block-style: default
 format: html
