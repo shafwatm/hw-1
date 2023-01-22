@@ -165,7 +165,7 @@ generate_matrix(4)
 ```
 
 
-Let `M` be a $1000 \times 1000$ fixed matrix
+Let `M` be a fixed $50 \times 50$ matrix
 
 ```{R}
 M <- generate_matrix(1000)
