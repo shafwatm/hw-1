@@ -11,7 +11,7 @@ format: html
 ---
 
 ::: {.callout-important}
-## Due: Fri, Jan 27, 2023 @ 11:59pm
+## Due: Sun, Jan 29, 2023 @ 11:59pm
 
 
 [Link to the Github repository](https://github.com/psu-stat380/hw-1)
