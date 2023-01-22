@@ -314,19 +314,19 @@ Tip
 <div class="cell">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">generate_matrix</span>(<span class="dv">4</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>              [,1]       [,2]       [,3]       [,4]
-[1,] -2.302827e-01 -1.0162910  0.5387970 -0.1238284
-[2,]  5.763413e-01  0.3210526 -0.7508295 -0.8952213
-[3,] -1.788668e-01 -0.4749623 -1.1338647 -2.0070060
-[4,] -6.087343e-05 -0.9313182 -1.7296036 -1.0471162</code></pre>
+<pre><code>            [,1]       [,2]      [,3]       [,4]
+[1,]  0.62142231 -0.2898564 1.6668000 -1.2060228
+[2,]  0.04477555 -0.3207176 0.3882152  0.6300206
+[3,] -1.97263120  0.5281439 1.1933117 -0.5395644
+[4,] -0.92433004  1.2885123 0.2108641  0.8178336</code></pre>
 </div>
 </div>
-<p>Let <code>M</code> be a <span class="math inline">\(1000 \times 1000\)</span> fixed matrix</p>
+<p>Let <code>M</code> be a fixed <span class="math inline">\(50 \times 50\)</span> matrix</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>M <span class="ot">&lt;-</span> <span class="fu">generate_matrix</span>(<span class="dv">1000</span>)</span>
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>M <span class="ot">&lt;-</span> <span class="fu">generate_matrix</span>(<span class="dv">50</span>)</span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(M)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] 0.001306317</code></pre>
+<pre><code>[1] -0.01509947</code></pre>
 </div>
 </div>
 <ol start="2" type="1">

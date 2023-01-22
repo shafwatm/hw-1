@@ -168,7 +168,7 @@ generate_matrix(4)
 Let `M` be a fixed $50 \times 50$ matrix
 
 ```{R}
-M <- generate_matrix(1000)
+M <- generate_matrix(50)
 mean(M)
 ```
 
