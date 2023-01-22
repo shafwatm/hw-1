@@ -8,13 +8,14 @@ format: html
 # format: pdf
 ---
 
+[Link to the Github repository](https://github.com/psu-stat380/hw-1)
+
 ---
 
 ::: {.callout-important}
 ## Due: Sun, Jan 29, 2023 @ 11:59pm
 
 
-[Link to the Github repository](https://github.com/psu-stat380/hw-1)
 
 Please read the instructions carefully before submitting your assignment. 
 
