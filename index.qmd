@@ -31,7 +31,7 @@ Please read the instructions carefully before submitting your assignment.
 ⚠️ Please add your name to the the author information in the frontmatter before submitting your assignment. 
 :::
 
-
+<br><br><br><br>
 ---
 
 ## Question 1
@@ -77,7 +77,8 @@ In this question, we will walk through the process of _forking_ a `git` reposito
 If you're stuck at any step along the way, you can refer to the [official Github docs here](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request-from-a-fork)
 
 
-
+<br><br><br><br>
+<br><br><br><br>
 ---
 
 ## Question 2
@@ -117,6 +118,9 @@ For the following questions, provide your answers in a code cell.
 
 1. Sort the values of `my_vec_double` in ascending order. 
 
+
+<br><br><br><br>
+<br><br><br><br>
 ---
 
 ## Question 3
