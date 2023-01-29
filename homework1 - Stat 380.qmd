@@ -1,0 +1,112 @@
+---
+title: "Homework 1 - STAT 380"
+author: "Shafwat Mustafa"
+format: pdf
+editor: visual
+jupyter: python3
+---
+
+## 2. What data type does the vector contain?
+
+```{r}
+typeof(my_vec)
+
+```
+
+## 2. Create two new vectors called \`my_vec_double\` and \`my_vec_int\` which converts \`my_vec\` to Double & Integer types, respectively
+
+```{r}
+my_vec_double = as.numeric(my_vec)
+my_vec_int = as.integer(my_vec)
+
+```
+
+## 2. Create a new vector `my_vec_bool` which comprises of:
+
+-   `TRUE`if an element in `my_vec_double` is ≤0
+
+-   `FALSE` if an element in `my_vec_double` is ≥0
+
+How many elements of `my_vec_double` are greater than zero?
+
+```{r}
+my_vec_bool <- ifelse(my_vec_double <= 0, TRUE, FALSE)
+my_vec_bool
+num_elements <- sum(my_vec_bool == FALSE)
+num_elements
+```
+
+So we get that there are 4 elements of my_vec_double that are greater than 0.
+
+## 2. Sort the values of my_vec_double in ascending order 
+
+```{r}
+sort(my_vec_double)
+```
+
+## Question 3
+
+```{r}
+Matrixx <- function(n){
+  return(
+    matrix(1:n^2,
+           ncol = n,
+           byrow = T)
+  )
+}
+matrix1 <- Matrixx(3)
+matrix1
+```
+
+```{r}
+row1 = 1:100
+    row2 = row1^2
+    generate_matrix <- matrix(
+                    data = c(row1,row2),
+                    ncol=length(row1),
+                    byrow = T
+    )
+    generate_matrix
+M <- generate_matrix(50)
+mean(M)
+```
+
+```{}
+```
+
+```{r}
+row_wise_scan <- function(x){
+    n <- nrow(x)
+    m <- ncol(x)
+  
+    count <- 0
+    for(i in 1:n){
+        for(j in 1:m){
+            if(x[i,j] >= 0){
+                count <- count + 1 
+            }
+        }
+    }
+    return(count)
+}
+
+```
+
+```{r}
+col_wise_scan <- function(x){
+    count <- 0
+    n <- nrow(x)
+    m <- ncol(x)
+    
+    for(i in 1:m){
+      for(j in 1:n){
+        if(x[j, i] >= 0){
+          count <- count + 1
+        }
+      }
+    }
+    return(count)
+}
+```
+
+Between `col_wise_scan` and `row_wise_scan, I think col_wise_scan is faster because, R stores data in columns one after another.`
